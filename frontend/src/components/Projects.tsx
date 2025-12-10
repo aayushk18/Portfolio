@@ -1,5 +1,7 @@
 import { ExternalLink, Github, Award } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import restaurant from '../img/daawat-e-kuldeep.png'
+import institute from '../img/institute.png'
 
 export default function Projects() {
   const { isDark } = useTheme();
@@ -23,12 +25,13 @@ export default function Projects() {
       featured: true,
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Interactive weather dashboard with forecasts, historical data, and beautiful visualizations.',
-      technologies: ['React', 'TypeScript', 'Chart.js', 'Weather API'],
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Coaching & Institute Website',
+      description: 'A responsive and professional website built for an educational institute or coaching center. Features include course listings, faculty profiles, student testimonials, and a contact form.',
+      technologies: ['React', 'Javascript', 'Tailwind CSS', 'RestAPIs'],
+      // image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image:institute,
       github: 'https://github.com',
-      live: 'https://example.com',
+      live: 'https://school-web-delta.vercel.app/',
       featured: false,
     },
     {
@@ -41,12 +44,13 @@ export default function Projects() {
       featured: false,
     },
     {
-      title: 'Portfolio Generator',
-      description: 'SaaS application that helps developers create and customize their portfolio websites.',
+      title: 'Cafe and Restaurant Websites',
+      description: 'A visually appealing website built for a modern cafe, featuring an interactive menu, category filtering and smooth navigation.',
       technologies: ['React', 'Supabase', 'Tailwind CSS'],
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      // image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image:restaurant,
       github: 'https://github.com',
-      live: 'https://example.com',
+      live: 'https://dawat-e-kuldeep.vercel.app/',
       featured: true,
     },
     {
