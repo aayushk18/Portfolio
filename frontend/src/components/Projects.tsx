@@ -29,13 +29,13 @@ export default function Projects() {
     // },
     {
       title: 'Coaching & Institute Website',
-      description: 'A responsive and professional website built for an educational institute or coaching center. Features include course listings, faculty profiles, student testimonials, and a contact form.',
+      description: 'A responsive and professional website built for an educational institute or coaching center.',
       technologies: ['React', 'Javascript', 'Tailwind CSS', 'RestAPIs'],
       // image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
       image:institute,
       github: 'https://github.com',
       live: 'https://school-web-delta.vercel.app/',
-      featured: false,
+      featured: true,
     },
    
     {
@@ -50,8 +50,8 @@ export default function Projects() {
     },
     {
       title: 'School/Institute Management Software',
-      description: 'Modern blogging platform with markdown support, comments, and social sharing features.',
-      technologies: ['React', 'Nodejs', 'RestAPIs', 'Zustand', 'Axios', 'JWT', 'Multer','bcryptjs'],
+      description: 'A School Management System designed to streamline academic and administrative operations.',
+      technologies: ['React', 'Nodejs', 'RestAPIs', 'Zustand', 'Axios', 'JWT', 'MongoDB','bcryptjs'],
       image: instituteSoftware,
       github: 'https://github.com',
       live: 'https://example.com',
@@ -122,7 +122,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex gap-4">
-                  <a
+                  {/* <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -130,16 +130,16 @@ export default function Projects() {
                   >
                     <Github size={18} />
                     Code
-                  </a>
-                  <a
+                  </a> */}
+                {project.featured?  <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center gap-2 ${isDark ? 'text-gray-400 hover:text-emerald-400' : 'text-slate-700 hover:text-emerald-600'} transition-colors font-medium`}
                   >
                     <ExternalLink size={18} />
-                    Live Demo
-                  </a>
+                  Live Demo
+                  </a>:""}
                 </div>
               </div>
             </div>
