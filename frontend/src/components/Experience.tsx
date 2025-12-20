@@ -16,17 +16,17 @@ export default function Experience() {
         'Developed simplified explanations and step-by-step problem-solving strategies for difficult topics',
       ],
     },
-    {
-      role: 'Mechanical Intern',
-      company: 'Modern Transformers Pvt Ltd',
-      period: '2024',
-      description: 'Worked in a transformer manufacturing environment, assisting the engineering team in production processes, quality checks, and technical documentation.',
-      achievements: [
-        'Supported the assembly and testing of distribution and power transformers',
-        'Assisted in quality inspection, material handling, and workflow optimization',
-        'Prepared technical reports and helped maintain manufacturing records',
-      ],
-    },
+    // {
+    //   role: 'Mechanical Intern',
+    //   company: 'Modern Transformers Pvt Ltd',
+    //   period: '2024',
+    //   description: 'Worked in a transformer manufacturing environment, assisting the engineering team in production processes, quality checks, and technical documentation.',
+    //   achievements: [
+    //     'Supported the assembly and testing of distribution and power transformers',
+    //     'Assisted in quality inspection, material handling, and workflow optimization',
+    //     'Prepared technical reports and helped maintain manufacturing records',
+    //   ],
+    // },
     {
       role: 'MERN Stack Developer',
       company: 'Aas Educom Pvt Ltd',

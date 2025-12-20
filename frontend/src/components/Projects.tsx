@@ -2,28 +2,31 @@ import { ExternalLink, Github, Award } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import restaurant from '../img/daawat-e-kuldeep.png'
 import institute from '../img/institute.png'
+import socialsite from '../img/socialsite.png' 
+import instituteSoftware from '../img/instituteSoftware.png'
+ 
 
 export default function Projects() {
   const { isDark } = useTheme();
   const projects = [
-    {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with payment integration, user authentication, and admin dashboard.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: true,
-    },
-    {
-      title: 'Task Management App',
-      description: 'Real-time collaborative task management tool with drag-and-drop functionality and team features.',
-      technologies: ['React', 'Firebase', 'Tailwind CSS'],
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: true,
-    },
+    // {
+    //   title: 'E-Commerce Platform',
+    //   description: 'A full-featured e-commerce platform with payment integration, user authentication, and admin dashboard.',
+    //   technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    //   image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   github: 'https://github.com',
+    //   live: 'https://example.com',
+    //   featured: true,
+    // },
+    // {
+    //   title: 'Task Management App',
+    //   description: 'Real-time collaborative task management tool with drag-and-drop functionality and team features.',
+    //   technologies: ['React', 'Firebase', 'Tailwind CSS'],
+    //   image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   github: 'https://github.com',
+    //   live: 'https://example.com',
+    //   featured: true,
+    // },
     {
       title: 'Coaching & Institute Website',
       description: 'A responsive and professional website built for an educational institute or coaching center. Features include course listings, faculty profiles, student testimonials, and a contact form.',
@@ -34,15 +37,7 @@ export default function Projects() {
       live: 'https://school-web-delta.vercel.app/',
       featured: false,
     },
-    {
-      title: 'Blog Platform',
-      description: 'Modern blogging platform with markdown support, comments, and social sharing features.',
-      technologies: ['Next.js', 'PostgreSQL', 'Prisma'],
-      image: 'https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: false,
-    },
+   
     {
       title: 'Cafe and Restaurant Websites',
       description: 'A visually appealing website built for a modern cafe, featuring an interactive menu, category filtering and smooth navigation.',
@@ -54,14 +49,25 @@ export default function Projects() {
       featured: true,
     },
     {
-      title: 'Social Media Analytics',
-      description: 'Analytics dashboard for tracking social media metrics and engagement across platforms.',
-      technologies: ['Vue.js', 'D3.js', 'Express', 'Redis'],
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'School/Institute Management Software',
+      description: 'Modern blogging platform with markdown support, comments, and social sharing features.',
+      technologies: ['React', 'Nodejs', 'RestAPIs', 'Zustand', 'Axios', 'JWT', 'Multer','bcryptjs'],
+      image: instituteSoftware,
       github: 'https://github.com',
       live: 'https://example.com',
       featured: false,
     },
+    {
+      title: 'Social Networking App',
+      description: 'Analytics dashboard for tracking social media metrics and engagement across platforms.',
+      technologies: ['React.js', 'NewsAPI', 'TailwindCSS', 'Lucide'],
+      // image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image:socialsite,
+      github: 'https://github.com',
+      live: 'https://i-talk-social-networking-app.vercel.app/',
+      featured: true,
+    },
+   
   ];
 
   return (
